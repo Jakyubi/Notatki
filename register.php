@@ -8,13 +8,12 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <!-- form for logging -->
-    <form action="login2.php" method="post">
+
+<form action="register2.php" method="post">
         <input type="text" name="username" id="" placeholder="username">
         <input type="text" name="password" id="" placeholder="password">
         <input type="submit" name="submit" value="LOGIN">
     </form>
-
-    WANT TO REGISTER NEW ACCOUNT? <a href="register.php">here</a>
+    
 </body>
 </html>
