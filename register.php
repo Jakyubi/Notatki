@@ -8,8 +8,8 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
-<form action="register2.php" method="post">
+    <!-- form to register new user -->
+    <form action="register2.php" method="post">
         <input type="text" name="username" id="" placeholder="username">
         <input type="text" name="password" id="" placeholder="password">
         <input type="submit" name="submit" value="LOGIN">
