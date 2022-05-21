@@ -8,6 +8,7 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <!-- form for logging -->
     <form action="login2.php" method="post">
         <input type="text" name="username" id="" placeholder="username">
         <input type="text" name="password" id="" placeholder="password">

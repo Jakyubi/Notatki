@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `username`, `password`) VALUES
 (1, 'admin', 'admin'),
-(2, 'user', 'user');
+(3, 'user', 'user');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

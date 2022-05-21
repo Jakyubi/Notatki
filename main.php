@@ -5,9 +5,10 @@ session_start();
 require 'functions.php';
 
 $connect = connectToDb();
-$zapytanie = $connect->query("SELECT * FROM `notatki` ORDER BY id DESC");
 $currentUser = $_SESSION['currentUser'];
+$zapytanie = $connect->query("SELECT * FROM `notatki` WHERE owner = '$currentUser' ORDER BY id DESC");
 echo("Current user: $currentUser");
+
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +24,7 @@ echo("Current user: $currentUser");
     <a href="about.php" class="about">ABOUT</a>
     <!-- form for writing and adding notes -->
     <form class='note-form' action='create.php' method='post'>
+        <input type="hidden" name="owner" id="owner" value=<?=$currentUser?>>
         <input type="text" name="title" id="title" placeholder="your title">
         <input type="text" name="description" id="description" placeholder="your description">
         <input type="submit" value="add note" id="add">
