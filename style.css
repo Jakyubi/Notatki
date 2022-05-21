@@ -3,7 +3,6 @@ body{
     color: bisque;
 }
 
-
 .about {
 	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
 	background-color:#ffec64;
@@ -23,7 +22,6 @@ body{
 	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
 	background-color:#ffab23;
 }
-   
 
 .note-form{
     width: 400px;
@@ -37,8 +35,6 @@ body{
     margin-top: 15px;
 
 }
-
-
 
 .notes{
 display: flex;

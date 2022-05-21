@@ -10,7 +10,7 @@ $sql = "INSERT INTO notatki  VALUES ('', '$nazwa', '$desc', '$time')";
 
 // try to add note, if failed, dump an error
 if(mysqli_query($connect, $sql)){
-    header('Location: index.php');
+    header('Location: main.php');
 } else{
     echo "ERROR: Couldn't add this note, sql statement: $sql. 
     <br>Possible reason: "

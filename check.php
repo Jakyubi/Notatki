@@ -13,12 +13,15 @@ foreach ($sql as $line)	{
 
 	$query = $query . $line;
 	if ($endWith == ';') {
-		mysqli_query($connect,$query) or die('<div class="error-response sql-import-response">Problem in executing the SQL query <b>' . $query. '</b></div>');
+		mysqli_query($connect,$query) or die('<div class="error-response sql-import-response">Problem in executing the SQL query, 
+		most probably database and records you try to import already exist <b><br><br>' 
+		. $query. '</b></div>'
+		. 'Click <a href="index.php">here</a> to go back'
+	);
 		$query= '';		
 	}
 }
 echo '<a href="main.php">Wszystko okej, kliknij aby rozpocząć korzystanie
 ze strony. Główny plik znajduje się w main.php</a>
-
 ';
 ?>

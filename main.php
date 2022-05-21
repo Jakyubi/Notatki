@@ -1,3 +1,4 @@
+<!-- this is main file -->
 <?php
 // variables to connect with db and to display all notes
 require 'functions.php';
@@ -6,7 +7,6 @@ $zapytanie = $connect->query("SELECT * FROM `notatki` ORDER BY id DESC");
 ?>
 
 <!DOCTYPE html>
-<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,12 +16,6 @@ $zapytanie = $connect->query("SELECT * FROM `notatki` ORDER BY id DESC");
 </head>
 <body>
     <a href="about.php" class="about">ABOUT</a>
-Jeśli otwierasz stronę po raz pierwszy, kliknij w przycisk ------------>
-    <form action="check.php">
-            <input type="hidden" name="id">
-            <button class="exit">X</button>
-            </form>
-
     <!-- form for writing and adding notes -->
     <form class='note-form' action='create.php' method='post'>
         <input type="text" name="title" id="title" placeholder="your title">

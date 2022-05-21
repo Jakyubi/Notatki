@@ -9,13 +9,14 @@
 
 </head>
 <body>
-    
+    <!-- this is about page -->
     Ten projekt jest notatnikiem napisanym w php. <br>
     W polach tekstowych wpisujemy tytuł oraz treść notatki. <br>
     Po kliknięciu przycisku "add note" notatka zostaje dodana do bazy danych<br>
     Poniżej formularza zostają wyświetlone wszystkie notatki w bazie <br>
     Przyciskiem "X" usuwamy daną notatkę<br>
 
-    <a href="index.php">Powrót do strony głównej</a>
+    <a href="main.php" class='linkText'>Powrót do strony głównej</a>
+    TODO css tu
 </body>
 </html>
