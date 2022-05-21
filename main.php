@@ -1,9 +1,13 @@
 <!-- this is main file -->
 <?php
+session_start();
 // variables to connect with db and to display all notes
 require 'functions.php';
+
 $connect = connectToDb();
 $zapytanie = $connect->query("SELECT * FROM `notatki` ORDER BY id DESC");
+$currentUser = $_SESSION['currentUser'];
+echo("Current user: $currentUser");
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +19,7 @@ $zapytanie = $connect->query("SELECT * FROM `notatki` ORDER BY id DESC");
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <br>
     <a href="about.php" class="about">ABOUT</a>
     <!-- form for writing and adding notes -->
     <form class='note-form' action='create.php' method='post'>

@@ -15,8 +15,8 @@
             <input type="hidden" name="id">
             <button class="about">X</button>
             </form>
-    JEŚLI BAZA DANYCH JUŻ ISTNIEJE, KLIKNIJ TU <br><br>
-    <a href="main.php" class="about">X</a>
+    JEŚLI BAZA DANYCH JUŻ ISTNIEJE, KLIKNIJ TU ABY SIĘ ZALOGOWAĆ<br><br>
+    <a href="login.php" class="about">X</a>
 TODO: zrobic css tu all
 </body>
 </html>

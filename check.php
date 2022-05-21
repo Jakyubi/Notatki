@@ -21,7 +21,7 @@ foreach ($sql as $line)	{
 		$query= '';		
 	}
 }
-echo '<a href="main.php">Wszystko okej, kliknij aby rozpocząć korzystanie
+echo '<a href="login.php">Wszystko okej, kliknij aby rozpocząć korzystanie
 ze strony. Główny plik znajduje się w main.php</a>
 ';
 ?>

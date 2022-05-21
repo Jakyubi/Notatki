@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 21 Maj 2022, 21:23
+-- Czas generowania: 22 Maj 2022, 00:46
 -- Wersja serwera: 10.4.14-MariaDB
 -- Wersja PHP: 7.4.10
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Baza danych: `notatki`
 --
-CREATE DATABASE IF NOT EXISTS `notatki` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `notatki`;
 
 -- --------------------------------------------------------
 
@@ -35,14 +33,15 @@ CREATE TABLE IF NOT EXISTS `notatki` (
   `description` varchar(1024) NOT NULL,
   `date` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Zrzut danych tabeli `notatki`
 --
-INSERT INTO `notatki` (`id`, `title`, `description`, `date`) VALUES
-(43, 'tytuł notatki testowej', 'treść notatki testowej', '2022-05-21 22:15:40');
 
+INSERT INTO `notatki` (`id`, `title`, `description`, `date`) VALUES
+(43, 'tytuł notatki testowej', 'treść notatki testowej', '2022-05-21 22:15:40'),
+(45, 'tfgr', 'tfg', '2022-05-22 00:35:51');
 
 -- --------------------------------------------------------
 
@@ -65,7 +64,6 @@ INSERT INTO `users` (`id`, `username`, `password`) VALUES
 (1, 'admin', 'admin'),
 (2, 'user', 'user');
 COMMIT;
-
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
