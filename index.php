@@ -1,22 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+<?php require 'topPage.php';?>
 
-</head>
-<body>
+    <div id="logInForm">
+        <h4>
     <!-- this is start page -->
-    JEŚLI OTWIERASZ STRONĘ PO RAZ PIERWSZY I NIE MASZ STWORZONEJ BAZY DANYCH DLA NOTATEK, KLIKNIJ TU
+    <p>WITAJ, JEŚLI OTWIERASZ STRONĘ PO RAZ PIERWSZY I NIE MASZ STWORZONEJ BAZY DANYCH DLA NOTATEK, KLIKNIJ TU
     <form action="check.php">
             <input type="hidden" name="id">
             <button class="about">X</button>
             </form>
-    JEŚLI BAZA DANYCH JUŻ ISTNIEJE, KLIKNIJ TU ABY SIĘ ZALOGOWAĆ<br><br>
+</p>
+    <p>JEŚLI BAZA DANYCH JUŻ ISTNIEJE, KLIKNIJ TU ABY SIĘ ZALOGOWAĆ</p>
     <a href="login.php" class="about">X</a>
-TODO: zrobic css tu all
-</body>
-</html>
+<h4>
+</div>
+
+<?php require 'bottomPage.php';?>

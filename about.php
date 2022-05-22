@@ -1,22 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+<?php require 'topPage.php';?>
 
-</head>
-<body>
+<div id="logInForm">
+        <div id='aboutText'>
+        <h3>Co to za projekt?</h3>
     <!-- this is about page -->
-    Ten projekt jest notatnikiem napisanym w php. <br>
-    W polach tekstowych wpisujemy tytuł oraz treść notatki. <br>
-    Po kliknięciu przycisku "add note" notatka zostaje dodana do bazy danych<br>
-    Poniżej formularza zostają wyświetlone wszystkie notatki w bazie <br>
-    Przyciskiem "X" usuwamy daną notatkę<br>
+    <p>Ten projekt jest notatnikiem napisanym w php.</p>
+    <p>Aby uzyskać dostęp do swoich notatek, należy się zalogować na istniejące kono<br>
+    lub stworzyć nowe. Każda notatka jest przydzielona do użytkownika
+    który ją dodał</p>
+    <p>W polach tekstowych wpisujemy tytuł oraz treść notatki.
+    Po kliknięciu przycisku "add note" notatka zostaje dodana do bazy danych
+    Poniżej formularza zostają wyświetlone wszystkie notatki w bazie
+    Przyciskiem "X" usuwamy daną notatkę</p>
 
-    <a href="main.php" class='linkText'>Powrót do strony głównej</a>
-    TODO css tu
-</body>
-</html>
+    <a href="main.php">Powrót do strony głównej</a>
+ 
+</div>
+    </div>
+    <?php require 'bottomPage.php';?>

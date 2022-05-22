@@ -1,5 +1,6 @@
 <?php
 session_start();
+require 'topPage.php';
 
 require 'functions.php';
 $connect = connectToDb();
@@ -19,11 +20,16 @@ foreach($zapytanie as $users){
 //if user exists and password is correct, go to main page
 if(isset($id)){
     $_SESSION['currentUser'] = $user;
-    echo($_SESSION['currentUser']);
     header('Location: main.php');
 }else{
-    echo"Incorrect password or login";
+    echo"<div id='logInForm'><h4>";
+    echo"Incorrect password or login<br>";
+    echo"<a href='login.php'>Go back</a>";
+    echo"</h4></div>";
 }
 
-
+require 'bottomPage.php';
 ?>
+    
+
+

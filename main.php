@@ -7,8 +7,9 @@ require 'functions.php';
 $connect = connectToDb();
 $currentUser = $_SESSION['currentUser'];
 $zapytanie = $connect->query("SELECT * FROM `notatki` WHERE owner = '$currentUser' ORDER BY id DESC");
-echo("Current user: $currentUser");
-
+echo("<div id='currUser'>");
+echo("Current user: $currentUser <br>");
+//echo("</div>");
 ?>
 
 <!DOCTYPE html>
@@ -21,15 +22,28 @@ echo("Current user: $currentUser");
 </head>
 <body>
     <br>
+
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
     <a href="about.php" class="about">ABOUT</a>
+    </div>
+
     <!-- form for writing and adding notes -->
-    <form class='note-form' action='create.php' method='post'>
+    <div id="logInFormMain">
+        <h3>Dodaj notatkę</h3>
+    <form  action='create.php' method='post'>
         <input type="hidden" name="owner" id="owner" value=<?=$currentUser?>>
         <input type="text" name="title" id="title" placeholder="your title">
-        <input type="text" name="description" id="description" placeholder="your description">
-        <input type="submit" value="add note" id="add">
+        <textarea name="description" id="description" cols="30" rows="20" placeholder="your description"></textarea>
+        <!--<input type="text" name="description" id="description" placeholder="your description">
+-->   <input type="submit" value="add note">
     </form>
-
+</div>
+ 
+<div id="noteDisplay">
     <!-- all notes -->
     <div class="notes">
 
@@ -48,15 +62,14 @@ echo("Current user: $currentUser");
 
             <form action="delete.php">
             <input type="hidden" name="id" value="<?=$id?>">
-            <button class="exit">X</button>
+            <button class="exit">x</button>
             </form>
 
         </div>
         <?php endforeach; ?>
 
     </div>
-
-
+        </div>
 
 
 </body>
