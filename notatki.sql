@@ -34,14 +34,16 @@ CREATE TABLE IF NOT EXISTS `notatki` (
   `title` varchar(255) NOT NULL,
   `description` varchar(1024) NOT NULL,
   `date` datetime NOT NULL,
+  `owner` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Zrzut danych tabeli `notatki`
 --
-INSERT INTO `notatki` (`id`, `title`, `description`, `date`) VALUES
-(43, 'tytuł notatki testowej', 'treść notatki testowej', '2022-05-21 22:15:40');
+INSERT INTO `notatki` (`id`, `title`, `description`, `date`, `owner`) VALUES
+(1, 'tytuł notatki testowej', 'treść notatki testowej', '2022-05-21 22:15:40', 'admin');
+
 
 
 -- --------------------------------------------------------
@@ -55,7 +57,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `username` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Zrzut danych tabeli `users`
@@ -63,7 +65,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `username`, `password`) VALUES
 (1, 'admin', 'admin'),
-(3, 'user', 'user');
+(2, 'user', 'user');
 COMMIT;
 
 

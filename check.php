@@ -14,7 +14,7 @@ foreach ($sql as $line)	{
 	$query = $query . $line;
 	if ($endWith == ';') {
 		mysqli_query($connect,$query) or die('<div class="error-response sql-import-response">Problem in executing the SQL query, 
-		most probably database and records you try to import already exist <b><br><br>' 
+		most probably database and records you try to import already exist <b><br><br>' . mysqli_error($connect) . '<br><br>'
 		. $query. '</b></div>'
 		. 'Click <a href="index.php">here</a> to go back'
 	);
@@ -23,5 +23,5 @@ foreach ($sql as $line)	{
 }
 echo '<a href="login.php">Wszystko okej, kliknij aby rozpocząć korzystanie
 ze strony. Główny plik znajduje się w main.php</a>
-';
+' ;
 ?>
