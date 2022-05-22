@@ -34,7 +34,7 @@ body{
     bottom: -80px;
 }
 
-/*page background/*
+/*page background ^^^^^/*
 /*-------------------------------------------------------*/
 
 
@@ -73,7 +73,7 @@ body{
 }
 
 
-/*main page only background/*
+/*main page only background^^^^^/*
 /*-------------------------------------------------------*/
 
 
@@ -92,16 +92,16 @@ body{
     padding: 50px 35px;
 }
 #logInForm *{
-    font-family: 'Poppins',sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    word-spacing: 0.5px;
     color: #ffffff;
-    letter-spacing: 0.5px;
     outline: none;
 }
 
 
 #logInFormMain{
-    height: 520px;
-    width: 400px;
+    height: 700px;
+    width: 450px;
     background-color: rgba(255,255,255,0.13);
     position: absolute;
     transform: translate(-50%,-50%);
@@ -114,15 +114,15 @@ body{
     padding: 50px 35px;
 }
 #logInFormMain *{
-    font-family: 'Poppins',sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    word-spacing: 0.5px;
     color: #ffffff;
-    letter-spacing: 0.5px;
     outline: none;
 }
 
 #noteDisplay{
-    height: 520px;
-    width: 400px;
+    height: 700px;
+    width: 450px;
     background-color: rgba(255,255,255,0.13);
     position: absolute;
     transform: translate(-50%,-50%);
@@ -136,8 +136,8 @@ body{
 }
 #noteDisplay *{
     font-family: 'Poppins',sans-serif;
-    color: #ffffff;
     letter-spacing: 0.5px;
+    color: #ffffff;
     outline: none;
 }
 
@@ -169,26 +169,12 @@ input{
     margin-top: 8px;
     font-size: 14px;
     font-weight: 300;
+    resize: none;
 }
 ::placeholder{
     color: #e5e5e5;
 }
 
-textarea{
-    color: #ffffff;
-    display: block;
-    height: 100px;
-    width: 100%;
-    background-color: rgba(255,255,255,0.16);
-    border: none;
-    padding: 0 10px;
-    margin-top: 8px;
-    font-size: 14px;
-    font-weight: 300;
-}
-::placeholder{
-    color: #e5e5e5;
-}
 
 #logInButton{
     margin-top: 50px;
@@ -221,7 +207,7 @@ h4{
 
 
 
-/*forms*/
+/*forms^^^^^/*
 /*-------------------------------------------------------*/
 
 .about {
@@ -246,16 +232,16 @@ h4{
 
 #currUser{
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-size: 17px;
     letter-spacing: 0px;
     word-spacing: 2px;
+    font-size: 17px;
     color: #ffffff;
 }
 
 
 
 
-/*about*/
+/*about^^^^^/*
 /*--------------------
     border-radius:3px;
     width: 400px;
@@ -277,13 +263,15 @@ justify-content: center;
 .note{
     border-radius:3px;
     width: 400px;
+    min-height: 50px;
     background-color: rgba(255,255,255,0.16);
     color: black;
     display: inline-block;
     margin: 10px;
-    padding: 10px;
+    padding: 30px;
     position: relative;
-    min-height: 50px;
+    word-wrap: break-word;
+
 }
 
 .note-title{
@@ -312,5 +300,5 @@ justify-content: center;
 
 }
 
-/*notes*/
+/*notes^^^^^/*
 /*-------------------------------------------------------*/

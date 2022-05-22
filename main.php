@@ -29,6 +29,7 @@ echo("Current user: $currentUser <br>");
     </div>
 
     <a href="about.php" class="about">ABOUT</a>
+    <a href="login.php" class="about">LOG OUT</a>
     </div>
 
     <!-- form for writing and adding notes -->
@@ -57,6 +58,7 @@ echo("Current user: $currentUser <br>");
             ?>
             <!-- displaying note (text, date and delete button) -->
             <div class="note-title"><?= $pytanie['title']?></div>
+            <hr>
             <div class="note-text"><?= $pytanie['description']?></div>
             <div class="note-date"><?= $pytanie['date']?></div>
 

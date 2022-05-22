@@ -10,7 +10,11 @@
             </form>
 </p>
     <p>JEŚLI BAZA DANYCH JUŻ ISTNIEJE, KLIKNIJ TU ABY SIĘ ZALOGOWAĆ</p>
-    <a href="login.php" class="about">X</a>
+
+            <form action="login.php">
+            <button class="about">X</button>
+            </form>
+
 <h4>
 </div>
 
